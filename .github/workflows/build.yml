@@ -55,7 +55,7 @@ jobs:
           RUNTIME_IMAGE=quay.io/vexxhost/openstack-runtime-${{ matrix.from }}
           RELEASE=${{ matrix.release }}
           PROJECT=magnum
-          PROJECT_REPO=https://github.com/openstack/magnum
+          PROJECT_REPO=https://github.com/vexxhost/magnum
           PROJECT_REF=${{ env.PROJECT_REF }}
           EXTRAS=
           PROFILES=
