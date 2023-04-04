@@ -11,4 +11,5 @@ COPY --from=bindep --link /runtime-pip-packages /runtime-pip-packages
 FROM ${RUNTIME_IMAGE}:a391e31bb33041611e2aa2797debcb21e6f221cd AS runtime
 COPY --from=bindep --link /runtime-dist-packages /runtime-dist-packages
 COPY --from=builder --link /var/lib/openstack /var/lib/openstack
+COPY --from=docker.io/alpine/helm:3.11.2 /usr/bin/helm /usr/local/bin/helm
 COPY --from=gcr.io/go-containerregistry/crane /ko-app/crane /usr/local/bin/crane
