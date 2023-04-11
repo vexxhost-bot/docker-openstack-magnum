@@ -60,7 +60,7 @@ jobs:
           PROJECT_REF=${{ env.PROJECT_REF }}
           EXTRAS=
           PROFILES=
-          DIST_PACKAGES=
+          DIST_PACKAGES=haproxy
           PIP_PACKAGES=cryptography python-binary-memcached magnum-cluster-api==0.5.0
         cache-from: type=gha,scope=${{ matrix.from }}-${{ matrix.release }}
         cache-to: type=gha,mode=max,scope=${{ matrix.from }}-${{ matrix.release }}
