@@ -29,8 +29,6 @@ jobs:
         - focal
         - jammy
         release:
-        - wallaby
-        - xena
         - yoga
         - zed
         - "2023.1"
@@ -63,7 +61,7 @@ jobs:
           EXTRAS=
           PROFILES=
           DIST_PACKAGES=
-          PIP_PACKAGES=cryptography python-binary-memcached magnum-cluster-api==0.4.2
+          PIP_PACKAGES=cryptography python-binary-memcached magnum-cluster-api==0.5.0
         cache-from: type=gha,scope=${{ matrix.from }}-${{ matrix.release }}
         cache-to: type=gha,mode=max,scope=${{ matrix.from }}-${{ matrix.release }}
         context: .
