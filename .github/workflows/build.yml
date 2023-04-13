@@ -61,7 +61,7 @@ jobs:
           EXTRAS=
           PROFILES=
           DIST_PACKAGES=haproxy
-          PIP_PACKAGES=cryptography python-binary-memcached magnum-cluster-api==0.5.2
+          PIP_PACKAGES=cryptography python-binary-memcached magnum-cluster-api==0.5.3
         cache-from: type=gha,scope=${{ matrix.from }}-${{ matrix.release }}
         cache-to: type=gha,mode=max,scope=${{ matrix.from }}-${{ matrix.release }}
         context: .
